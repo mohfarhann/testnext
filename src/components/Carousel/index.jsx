@@ -22,16 +22,16 @@ const Carousel = () => {
   return (
     <Splide options={splideOptions}>
       <SplideSlide>
-        <Image src={Banner1} alt="Slide 1" className='rounded-md'/>
+        <Image src={Banner1} alt="Slide 1" className='rounded-md w-full h-full'/>
       </SplideSlide>
       <SplideSlide>
-        <Image src={Banner2} alt="Slide 2" className='rounded-md'/>
+        <Image src={Banner2} alt="Slide 2" className='rounded-md w-full h-full'/>
       </SplideSlide>
       <SplideSlide>
-        <Image src={Banner3} alt="Slide 3" className='rounded-md'/>
+        <Image src={Banner3} alt="Slide 3" className='rounded-md w-full h-full'/>
       </SplideSlide>
       <SplideSlide>
-        <Image src={Banner4} alt="Slide 3" className='rounded-md'/>
+        <Image src={Banner4} alt="Slide 3" className='rounded-md w-full h-full'/>
       </SplideSlide>
     </Splide>
   );

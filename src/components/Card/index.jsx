@@ -4,11 +4,11 @@ import Image from 'next/image';
 
 const ProductCard = ({ image = '', productName, productDescription, productPara}) => {
   return (
-    <div className="bg-white rounded-lg overflow-hidden">
+    <div className="md:h-[500px] bg-white rounded-lg overflow-hidden">
       <Image
         src={image}
         alt={productName}
-        className="w-full h-full object-cover"
+        className=""
       />
       <div className="p-4">
         <p className="text-black mt-2 text-4xl font-bold mb-2">{productDescription}</p>

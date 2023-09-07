@@ -31,7 +31,7 @@ import IonLogo from "../../../public/img/security/1.svg"
 import MetLogo from "../../../public/img/security/2.svg"
 
 import Logo18 from "../../../public/img/responsible/1.svg"
-import GamecLogo from "../../../public/img/responsible/1.svg"
+import GamecLogo from "../../../public/img/responsible/2.svg"
 import BeLogo from "../../../public/img/responsible/3.svg"
 
 const index = () => {

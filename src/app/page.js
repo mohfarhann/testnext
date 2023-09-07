@@ -5,11 +5,11 @@ import Card from "@/components/Card";
 import FAQ from "@/components/Faq";
 import Footer from "@/components/Footer";
 import Loader from "@/components/Loader";
-import AnimatedDiv from "@/components/Animated";
+import { motion } from 'framer-motion';
 
 import CardPict1 from "../../public/img/card/1.svg";
 import CardPict2 from "../../public/img/card/2.svg";
-import CardPict3 from "../../public/img/card/3.svg";
+import CardPict3 from "../../public/img/card/4.svg";
 
 import { useState, useEffect } from "react";
 
@@ -26,6 +26,11 @@ import Link from "next/link";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
+
+  const zoomOutVariants = {
+    initial: { scale: 1 },
+    animate: { scale: 0, transition: { duration: 0.5 } },
+  };
 
   useEffect(() => {
     // Simulasikan pemrosesan data
@@ -54,14 +59,14 @@ export default function Home() {
                 </p>
                 <div className="flex flex-row items-center justify-center mt-2">
                   <div className="w-full md:w-2/12">
-                    <Link href="https://www.a8x888.com/en-id/register?affid=29210">
+                    <Link href="http://hokiselalu.us/daftar">
                       <button className="w-10/12 bg-gradient-to-r from-orange-400 to-orange-600 text-white font-medium rounded-md h-[40px]">
                         Daftar
                       </button>
                     </Link>
                   </div>
                   <div className="w-full md:w-2/12">
-                    <Link href="https://www.a8x888.com/en-id/register?affid=29210">
+                    <Link href="http://hokiselalu.us/daftar">
                       <button className="w-10/12 bg-blue-100 rounded-md h-[40px] text-blue-800">
                         Login
                       </button>
@@ -76,30 +81,42 @@ export default function Home() {
                     Mengapa Memilih BK8?
                   </h2>
                   <div className="flex flex-col  gap-4 md:flex-row md:items-center md:justify-between md:gap-4">
-                    <Card
-                      image={CardPict1}
-                      productName={"card1"}
-                      productDescription={"Aman terpercaya"}
-                      productPara={
-                        "Menggunakan teknologi enkripsi 128-bit dan autentikasi dua faktor untuk keamanan data pemain. BK8 juga memiliki lisensi dan regulasi resmi dari pemerintah Curacao. "
-                      }
-                    />
-                    <Card
-                      image={CardPict2}
-                      productName={"card1"}
-                      productDescription={"Permainan terlengkap"}
-                      productPara={
-                        "Menyediakan ratusan permainan terbaik dengan tingkat kemenangan yang tinggi. Mulai dari mesin slot online, esports, live casino hingga taruhan olahraga."
-                      }
-                    />
-                    <Card
-                      image={CardPict3}
-                      productName={"card1"}
-                      productDescription={"Bonus terbesar"}
-                      productPara={
-                        "Menawarkan bonus melimpah hingga puluhan juta rupiah setiap harinya. Mulai dari bonus cashback slot, sportsbook, rebate instant hingga welcome bonus."
-                      }
-                    />
+                    <motion.div 
+                      whileHover={{ scale: 1.1, margin: "10px" }}
+                    >
+                      <Card
+                        image={CardPict1}
+                        productName={"card1"}
+                        productDescription={"Aman terpercaya"}
+                        productPara={
+                          "Menggunakan teknologi enkripsi 128-bit dan autentikasi dua faktor untuk keamanan data pemain. BK8 juga memiliki lisensi dan regulasi resmi dari pemerintah Curacao. "
+                        }
+                      />
+                    </motion.div>
+                    <motion.div
+                      whileHover={{ scale: 1.1, margin: "10px" }}
+                    >
+                      <Card
+                        image={CardPict2}
+                        productName={"card1"}
+                        productDescription={"Permainan terlengkap"}
+                        productPara={
+                          "Menyediakan ratusan permainan terbaik dengan tingkat kemenangan yang tinggi. Mulai dari mesin slot online, esports, live casino hingga taruhan olahraga."
+                        }
+                      />
+                    </motion.div>
+                    <motion.div 
+                      whileHover={{ scale: 1.1, margin: "10px" }}
+                    > 
+                      <Card
+                        image={CardPict3}
+                        productName={"card1"}
+                        productDescription={"Bonus terbesar"}
+                        productPara={
+                          "Menawarkan bonus melimpah hingga puluhan juta rupiah setiap harinya. Mulai dari bonus cashback slot, sportsbook, rebate instant hingga welcome bonus."
+                        }
+                      />
+                    </motion.div>
                   </div>
                 </div>
               </div>
@@ -167,10 +184,12 @@ export default function Home() {
                         <HiMiniCheck />
                         <p>Interaksi langsung</p>
                       </div>
-                      <div className="w-full md:w-10/12">
-                        <button className="w-10/12 bg-gradient-to-r from-orange-400 to-orange-600 text-white font-medium rounded-md h-[40px]">
-                          Daftar
-                        </button>
+                      <div className="w-full">
+                        <Link href="http://hokiselalu.us/daftar">
+                          <button className="w-10/12 bg-gradient-to-r from-orange-400 to-orange-600 text-white font-medium rounded-md h-[40px]">
+                            Taruhan Sekarang
+                          </button>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -206,12 +225,14 @@ export default function Home() {
                       </div>
                       <div className="flex flex-row items-center justify-start gap-2 w-full">
                         <HiMiniCheck />
-                        <p>Tema unik</p>
+                        <p>Tema unik <span className="text-slate-100">taruhannnnn</span></p>
                       </div>
-                      <div className="w-full md:w-10/12">
-                        <button className="w-10/12 bg-gradient-to-r from-orange-400 to-orange-600 text-white font-medium rounded-md h-[40px]">
-                          Daftar
-                        </button>
+                      <div className="w-full">
+                        <Link href="http://hokiselalu.us/daftar">
+                          <button className="w-10/12 bg-gradient-to-r from-orange-400 to-orange-600 text-white font-medium rounded-md h-[40px]">
+                            Taruhan Sekarang
+                          </button>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -249,10 +270,12 @@ export default function Home() {
                         <HiMiniCheck />
                         <p>Bonus cashback</p>
                       </div>
-                      <div className="w-full md:w-10/12">
-                        <button className="w-10/12 bg-gradient-to-r from-orange-400 to-orange-600 text-white font-medium rounded-md h-[40px]">
-                          Daftar
-                        </button>
+                      <div className="w-full">
+                        <Link href="http://hokiselalu.us/daftar">
+                          <button className="w-10/12 bg-gradient-to-r from-orange-400 to-orange-600 text-white font-medium rounded-md h-[40px]">
+                            Taruhan Sekarang
+                          </button>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -281,7 +304,7 @@ export default function Home() {
                         </p>
                       </div>
                     </div>
-                    <div className="w-full flex-col items-center justify-start gap-8 bg-white p-4 rounded-md">
+                    <div className="md:w-[285px] md:h-[180px] flex-col items-center justify-start gap-8 bg-white p-4 rounded-md">
                       <HiOutlineCurrencyDollar className="text-4xl text-blue-600" />
                       <div className="mt-2">
                         <h3 className="text-2xl font-bold">Keamanan data</h3>
@@ -291,7 +314,7 @@ export default function Home() {
                         </p>
                       </div>
                     </div>
-                    <div className="w-full flex-col items-center justify-start gap-8 bg-white p-4 rounded-md">
+                    <div className="md:w-[285px] md:h-[180px] flex-col items-center justify-start gap-8 bg-white p-4 rounded-md">
                       <HiOutlineRectangleStack className="text-4xl text-blue-600" />
                       <div className="mt-2">
                         <h3 className="text-2xl font-bold">
@@ -303,7 +326,7 @@ export default function Home() {
                         </p>
                       </div>
                     </div>
-                    <div className="w-full flex-col items-center justify-start gap-8 bg-white p-4 rounded-md">
+                    <div className="md:w-[285px] md:h-[180px] flex-col items-center justify-start gap-8 bg-white p-4 rounded-md">
                       <HiOutlineUser className="text-4xl text-blue-600" />
                       <div className="mt-2">
                         <h3 className="text-2xl font-bold">
@@ -315,7 +338,7 @@ export default function Home() {
                         </p>
                       </div>
                     </div>
-                    <div className="w-full flex-col items-center justify-start gap-8 bg-white p-4 rounded-md">
+                    <div className="md:w-[285px] md:h-[180px] flex-col items-center justify-start gap-8 bg-white p-4 rounded-md">
                       <HiOutlineDevicePhoneMobile className="text-4xl text-blue-600" />
                       <div className="mt-2">
                         <h3 className="text-2xl font-bold">
@@ -327,7 +350,7 @@ export default function Home() {
                         </p>
                       </div>
                     </div>
-                    <div className="w-full flex-col items-center justify-start gap-8 bg-white p-4 rounded-md">
+                    <div className="md:w-[285px] md:h-[180px] flex-col items-center justify-start gap-8 bg-white p-4 rounded-md">
                       <HiOutlineSparkles className="text-4xl text-blue-600" />
                       <div className="mt-2">
                         <h3 className="text-2xl font-bold">
