@@ -40,41 +40,14 @@ const index = () => {
       <div className="w-full h-full mt-8 mb-20">
         <div className="w-full mx-auto">
           <div className="flex flex-col items-start justify-start gap-4">
-            <div className="w-full border-b-2 p-2">  
-              <h1 className="text-base mb-2 font-bold">Mitra Klub Resmi 2022/23</h1>
-              <Image src={AsvLogo} width={50} height={70}/>
-            </div>
             <div className="w-full flex flex-col md:flex-row items-center md:items-start justify-between border-b-2 p-2">
+              <div className="w-full md:w-full">  
+                <h1 className="text-base mb-2 font-bold">Mitra Klub Resmi 2022/23</h1>
+                <Image src={AsvLogo} width={50} height={70}/>
+              </div>
               <div className="w-full md:w-full">
                 <h1 className="font-semibold">Lisensi Permainan</h1>
                 <Image src={CurLogo} width={120} height={60} className="mb-2 mt-2"/>
-              </div>
-              <div className="w-full flex flex-col md:flex-col items-start md:items-center justify-between">
-                <ul className="md:w-full">  
-                  <li>
-                    <h1 className="font-semibold">Permainan</h1>
-                  </li>
-                  <li>Sports</li>
-                  <li>E-Sports</li>
-                  <li>Kasino</li>
-                  <li>Slot</li>
-                  <li>Fishing</li>
-                  <li>Lotre</li>
-                </ul>
-              </div>
-              <div className="w-full flex flex-col md:flex-col items-start md:items-center justify-between">    
-                  <ul className="md:w-full">
-                    <li>
-                      <h1 className="font-semibold mb-2 mt-2 md:mb-0 md:mt-0">Informasi</h1>
-                    </li>
-                    <li>Tentang Kami</li>
-                    <li>VIP</li>
-                    <li>Papan Peringkat</li>
-                    <li>Hubungi Kami</li>
-                    <li>Affiliasi</li>
-                    <li>Pusat Info</li>
-                    <li>Syarat & Ketentuan</li>
-                  </ul>
               </div>  
             </div>
             <div className="w-full flex flex-col items-center justify-between gap-2 mt-4">

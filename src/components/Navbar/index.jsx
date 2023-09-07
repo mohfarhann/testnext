@@ -18,7 +18,7 @@ function NavBar() {
     <>
       <div className='w-full bg-blue-800 sticky top-0'>
         <div className='flex flex-row items-center justify-center gap-2 text-center p-2'>
-          <p className='font-base text-xs md:text-xl md:font-bold text-white'>Daftar sekarang dan dapatkan Welcome Bonus Rp.20.000.000!</p>
+          <Link href="https://www.a8x888.com/en-id/register?affid=29210" className='font-base text-xs md:text-xl md:font-bold text-white'>Daftar sekarang dan dapatkan Welcome Bonus Rp.20.000.000!</Link>
         </div>
       </div>
       <nav className={`bg-white p-4 sticky top-0 z-[1]`}>
@@ -28,12 +28,11 @@ function NavBar() {
               <Button />
           </Link>
           <div className="hidden sm:flex flex-row items-center justify-between space-x-4 text-black w-6/12">
-            <Link href="/" className="block p-2 text-black">Sports</Link>
-            <Link href="/" className="block p-2 text-black">Casino</Link>
-            <Link href="/" className="block p-2 text-black">Slot</Link>
-            <Link href="/" className="block p-2 text-black">Lottery</Link>
-            <Link href="/" className="block p-2 text-black">Fishing</Link>
-            <Link href="/" className="block p-2 text-black">E-Sports</Link>
+            <Link href="https://www.bk8idxhoki.com/id-id/sports/bk8-sports" className="block p-2 text-black">Sports</Link>
+            <Link href="https://www.bk8idxhoki.com/id-id/casino/evolution-gaming" className="block p-2 text-black">Casino</Link>
+            <Link href="https://www.bk8idxhoki.com/id-id/slots/nextspin" className="block p-2 text-black">Slot</Link>
+            <Link href="https://www.bk8idxhoki.com/id-id/promotion" className="block p-2 text-black">Promosi</Link>
+            <Link href="https://www.bk8idxhoki.com/id-id/vip" className="block p-2 text-black">VIP</Link>
           </div>
           <div className="sm:hidden">
             <button onClick={toggleMenu} className="text-black text-3xl">
@@ -48,12 +47,11 @@ function NavBar() {
                 {!isOpen ? <HiBars3/> : <HiXMark />}
               </button>
             </div>
-            <Link href="/" className="block p-2 text-black">Sports</Link>
-            <Link href="/" className="block p-2 text-black">E-Sports</Link>
-            <Link href="/" className="block p-2 text-black">Casino</Link>
-            <Link href="/" className="block p-2 text-black">Slot</Link>
-            <Link href="/" className="block p-2 text-black">Lottery</Link>
-            <Link href="/" className="block p-2 text-black">Fishing</Link>
+            <Link href="https://www.bk8idxhoki.com/id-id/sports/bk8-sports" className="block p-2 text-black">Sports</Link>
+            <Link href="https://www.bk8idxhoki.com/id-id/casino/evolution-gaming" className="block p-2 text-black">Casino</Link>
+            <Link href="https://www.bk8idxhoki.com/id-id/slots/nextspin" className="block p-2 text-black">Slot</Link>
+            <Link href="https://www.bk8idxhoki.com/id-id/promotion" className="block p-2 text-black">Promosi</Link>
+            <Link href="https://www.bk8idxhoki.com/id-id/vip" className="block p-2 text-black">VIP</Link>
             <Button />
           </div>
         )}
